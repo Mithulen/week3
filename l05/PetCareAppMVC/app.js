@@ -18,6 +18,9 @@ app.use(session({
 
 app.use(flash());
 
+app.use(express.json());
+
+
 // Routes
 app.use(require('./routes/indexRoutes'));
 app.use(require('./routes/authRoutes'));
